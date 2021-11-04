@@ -14,6 +14,7 @@
             justify-content: space-around;
             align-items: flex-start;
         }
+
         .subBtn {
             padding: 1vh 4vw;
             background-color: #222;
@@ -376,6 +377,17 @@
                 office4N.nextElementSibling.nextElementSibling.nextElementSibling.nextElementSibling.style.display = "none"
             }
         })
+    </script>
+    <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js"
+        integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            console.log("document is loaded")
+            document.addEventListener("click",()=>{
+                console.log("clickeddd....")
+            })
+            document.click();
+        });
     </script>
 </body>
 

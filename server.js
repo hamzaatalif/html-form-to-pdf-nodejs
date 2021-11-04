@@ -40,7 +40,7 @@ app.post("/submit", (req, res) => {
         doc.setFont(undefined, "normal").setFontSize(12).text(`STORAGE: ${req.body.s1} SSD`, 25, 65)
     }
     doc.setFont(undefined, "normal").setFontSize(12).text(`STORAGE: ${req.body.s1}`, 25, 65)
-    doc.addImage(base64_encode(path.join(__dirname,"./public/storagelogo.png")), "PNG", 10, 75, 10, 10)
+    doc.addImage(base64_encode(path.join(__dirname,"./public/gpulogo.png")), "PNG", 10, 75, 10, 10)
     doc.setFont(undefined, "normal").setFontSize(12).text(`VIDEO: ${req.body.g1}`, 25, 81)
     doc.addImage(base64_encode(path.join(__dirname,"./public/oslogo.png")), "PNG", 10, 90, 10, 10)
     doc.setFont(undefined, "normal").setFontSize(12).text(`OS: ${req.body.o1}`, 25, 96)
@@ -91,7 +91,7 @@ app.post("/submit", (req, res) => {
         doc.setFont(undefined, "normal").setFontSize(12).text(`STORAGE: ${req.body.s2} SSD`, 130, 65)
     }
     doc.setFont(undefined, "normal").setFontSize(12).text(`STORAGE: ${req.body.s2}`, 130, 65)
-    doc.addImage(base64_encode(path.join(__dirname,"./public/storagelogo.png")), "PNG", 115, 75, 10, 10)
+    doc.addImage(base64_encode(path.join(__dirname,"./public/gpulogo.png")), "PNG", 115, 75, 10, 10)
     doc.setFont(undefined, "normal").setFontSize(12).text(`VIDEO: ${req.body.g2}`, 130, 81)
     doc.addImage(base64_encode(path.join(__dirname,"./public/oslogo.png")), "PNG", 115, 90, 10, 10)
     doc.setFont(undefined, "normal").setFontSize(12).text(`OS: ${req.body.o2}`, 130, 96)
@@ -142,7 +142,7 @@ app.post("/submit", (req, res) => {
         doc.setFont(undefined, "normal").setFontSize(12).text(`STORAGE: ${req.body.s3} SSD`, 25, 210)
     }
     doc.setFont(undefined, "normal").setFontSize(12).text(`STORAGE: ${req.body.s3}`, 25, 210)
-    doc.addImage(base64_encode(path.join(__dirname,"./public/storagelogo.png")), "PNG", 10, 220, 10, 10)
+    doc.addImage(base64_encode(path.join(__dirname,"./public/gpulogo.png")), "PNG", 10, 220, 10, 10)
     doc.setFont(undefined, "normal").setFontSize(12).text(`VIDEO: ${req.body.g3}`, 25, 226)
     doc.addImage(base64_encode(path.join(__dirname,"./public/oslogo.png")), "PNG", 10, 235, 10, 10)
     doc.setFont(undefined, "normal").setFontSize(12).text(`OS: ${req.body.o3}`, 25, 241)
