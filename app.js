@@ -4,10 +4,11 @@ const path = require("path");
 const { jsPDF } = require("jspdf");
 
 const app = express();
-const PORT = 5000;
+const PORT = process.env.PORT || 5000;
 
 app.use(express.urlencoded({ extended: false }));
 app.use(express.static(path.join(__dirname,"/public")))
+app.use(express.json())
 
 function base64_encode(file) {
     // read binary data
