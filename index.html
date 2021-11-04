@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create PDF</title>
+    <style>
+        .form-row {
+            width: 75%;
+            margin: auto;
+            display: flex;
+            justify-content: space-around;
+            align-items: flex-start;
+        }
+        .subBtn {
+            padding: 1vh 4vw;
+            background-color: #222;
+            color: #fff;
+            border-radius: 0.2rem;
+            margin-left: 40%;
+            margin-bottom: 10vh;
+            border: none;
+            outline: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <form action="http://localhost:5000/submit" method="post">
+        <div class="form-row">
+            <div>
+                <!-- ----------------------- -->
+                <!-- DEVICE NO 1 STARTS HERE -->
+                <!-- ----------------------- -->
+                <h2>FOR DEVICE NO. 1</h2>
+                <label for="t1">Enter Title Here:</label>
+                <br>
+                <input type="text" name="t1" id="t1">
+                <br>
+                <label for="c1">Enter CPU Details Here:</label>
+                <br>
+                <input type="text" name="c1" id="c1">
+                <br>
+                <label for="r1">Enter RAM Details Here:</label>
+                <br>
+                <input type="text" name="r1" id="r1">
+                <br>
+                <label for="s1">Enter Storage Details Here:</label>
+                <br>
+                <input type="text" name="s1" id="s1">
+                <label for="q1a">Is ssd?</label>
+                <input type="checkbox" name="q1a" id="q1a">
+                <br>
+                <label for="g1">Enter GPU Details Here:</label>
+                <br>
+                <input type="text" name="g1" id="g1">
+                <br>
+                <label for="o1">Enter OS Details Here:</label>
+                <br>
+                <input type="text" name="o1" id="o1">
+                <br>
+                <label for="">Comes with Office?</label>
+                <input type="radio" value="yes" name="officeQ1" id="officeQ1Y">
+                <label for="officeQ1Y">Yes</label>
+                <input type="radio" value="no" name="officeQ1" id="officeQ1N">
+                <label for="officeQ1N">No</label>
+                <br>
+                <br>
+                <select name="office1" id="office1" style="display: none;">
+                    <option value="2020">2020 Version</option>
+                    <option value="2019">2019 Version</option>
+                    <option value="2018">2018 Version</option>
+                    <option value="2017">2017 Version</option>
+                </select>
+                <br>
+                <br>
+                <label for="w1">Enter Warranty</label>
+                <br>
+                <!-- <input type="text" name="w1" id="w1"> -->
+                <select name="w1" id="w1">
+                    <option value="3">3 Months</option>
+                    <option value="6">6 Months</option>
+                    <option value="12">12 Months</option>
+                    <option value="24">24 Months</option>
+                </select>
+                <br>
+                <br>
+                <input type="checkbox" name="nr1y" id="nr1y">
+                <label for="nr1y">New</label>
+                <input type="checkbox" name="nr1n" id="nr1n">
+                <label for="nr1n">Refurbished</label>
+                <br>
+                <br>
+                <label for="p1">Enter Price Here:</label>
+                <br>
+                <input type="text" name="p1" id="p1">
+                <br>
+                <br>
+                <!-- ----------------------- -->
+                <!-- DEVICE NO 1 ENDS HERE   -->
+                <!-- ----------------------- -->
+            </div>
+            <div>
+                <!-- ----------------------- -->
+                <!-- DEVICE NO 2 STARTS HERE -->
+                <!-- ----------------------- -->
+                <h2>FOR DEVICE NO. 2</h2>
+                <label for="t2">Enter Title Here:</label>
+                <br>
+                <input type="text" name="t2" id="t2">
+                <br>
+                <label for="c2">Enter CPU Details Here:</label>
+                <br>
+                <input type="text" name="c2" id="c2">
+                <br>
+                <label for="r2">Enter RAM Details Here:</label>
+                <br>
+                <input type="text" name="r2" id="r2">
+                <br>
+                <label for="s2">Enter Storage Details Here:</label>
+                <br>
+                <input type="text" name="s2" id="s2">
+                <label for="q2a">Is ssd?</label>
+                <input type="checkbox" name="q2a" id="q2a">
+                <br>
+                <label for="g2">Enter GPU Details Here:</label>
+                <br>
+                <input type="text" name="g2" id="g2">
+                <br>
+                <label for="o2">Enter OS Details Here:</label>
+                <br>
+                <input type="text" name="o2" id="o2">
+                <br>
+                <label for="">Comes with Office?</label>
+                <input type="radio" value="yes" name="officeQ2" id="officeQ2Y">
+                <label for="officeQ2Y">Yes</label>
+                <input type="radio" value="no" name="officeQ2" id="officeQ2N">
+                <label for="officeQ2N">No</label>
+                <br>
+                <br>
+                <select name="office2" id="office2" style="display: none;">
+                    <option value="2020">2020 Version</option>
+                    <option value="2019">2019 Version</option>
+                    <option value="2018">2018 Version</option>
+                    <option value="2017">2017 Version</option>
+                </select>
+                <br>
+                <br>
+                <label for="w2">Enter Warranty</label>
+                <br>
+                <!-- <input type="text" name="w1" id="w1"> -->
+                <select name="w2" id="w2">
+                    <option value="3">3 Months</option>
+                    <option value="6">6 Months</option>
+                    <option value="12">12 Months</option>
+                    <option value="24">24 Months</option>
+                </select>
+                <br>
+                <br>
+                <input type="checkbox" name="nr2y" id="nr2y">
+                <label for="nr2y">New</label>
+                <input type="checkbox" name="nr2n" id="nr2n">
+                <label for="nr2n">Refurbished</label>
+                <br>
+                <br>
+                <label for="p2">Enter Price Here:</label>
+                <br>
+                <input type="text" name="p2" id="p2">
+                <br>
+                <br>
+                <!-- ----------------------- -->
+                <!-- DEVICE NO 2 ENDS HERE   -->
+                <!-- ----------------------- -->
+            </div>
+        </div>
+
+        <div class="form-row">
+            <div>
+                <!-- ----------------------- -->
+                <!-- DEVICE NO 3 STARTS HERE -->
+                <!-- ----------------------- -->
+                <h2>FOR DEVICE NO. 3</h2>
+                <label for="t3">Enter Title Here:</label>
+                <br>
+                <input type="text" name="t3" id="t3">
+                <br>
+                <label for="c3">Enter CPU Details Here:</label>
+                <br>
+                <input type="text" name="c3" id="c3">
+                <br>
+                <label for="r3">Enter RAM Details Here:</label>
+                <br>
+                <input type="text" name="r3" id="r3">
+                <br>
+                <label for="s3">Enter Storage Details Here:</label>
+                <br>
+                <input type="text" name="s3" id="s3">
+                <label for="q3a">Is ssd?</label>
+                <input type="checkbox" name="q3a" id="q3a">
+                <br>
+                <label for="g3">Enter GPU Details Here:</label>
+                <br>
+                <input type="text" name="g3" id="g3">
+                <br>
+                <label for="o3">Enter OS Details Here:</label>
+                <br>
+                <input type="text" name="o3" id="o3">
+                <br>
+                <label for="">Comes with Office?</label>
+                <input type="radio" value="yes" name="officeQ3" id="officeQ3Y">
+                <label for="officeQ3Y">Yes</label>
+                <input type="radio" value="no" name="officeQ3" id="officeQ3N">
+                <label for="officeQ3N">No</label>
+                <br>
+                <br>
+                <select name="office3" id="office3" style="display: none;">
+                    <option value="2020">2020 Version</option>
+                    <option value="2019">2019 Version</option>
+                    <option value="2018">2018 Version</option>
+                    <option value="2017">2017 Version</option>
+                </select>
+                <br>
+                <br>
+                <label for="w3">Enter Warranty</label>
+                <br>
+                <!-- <input type="text" name="w1" id="w1"> -->
+                <select name="w3" id="w3">
+                    <option value="3">3 Months</option>
+                    <option value="6">6 Months</option>
+                    <option value="12">12 Months</option>
+                    <option value="24">24 Months</option>
+                </select>
+                <br>
+                <br>
+                <input type="checkbox" name="nr3y" id="nr3y">
+                <label for="nr3y">New</label>
+                <input type="checkbox" name="nr3n" id="nr3n">
+                <label for="nr3n">Refurbished</label>
+                <br>
+                <br>
+                <label for="p3">Enter Price Here:</label>
+                <br>
+                <input type="text" name="p3" id="p3">
+                <br>
+                <br>
+                <!-- ----------------------- -->
+                <!-- DEVICE NO 3 ENDS HERE   -->
+                <!-- ----------------------- -->
+            </div>
+            <div>
+                <!-- ----------------------- -->
+                <!-- DEVICE NO 4 STARTS HERE -->
+                <!-- ----------------------- -->
+                <h2>FOR DEVICE NO. 4</h2>
+                <label for="t4">Enter Title Here:</label>
+                <br>
+                <input type="text" name="t4" id="t4">
+                <br>
+                <label for="c4">Enter CPU Details Here:</label>
+                <br>
+                <input type="text" name="c4" id="c4">
+                <br>
+                <label for="r4">Enter RAM Details Here:</label>
+                <br>
+                <input type="text" name="r4" id="r4">
+                <br>
+                <label for="s4">Enter Storage Details Here:</label>
+                <br>
+                <input type="text" name="s4" id="s4">
+                <label for="q4a">Is ssd?</label>
+                <input type="checkbox" name="q4a" id="q4a">
+                <br>
+                <label for="g4">Enter GPU Details Here:</label>
+                <br>
+                <input type="text" name="g4" id="g4">
+                <br>
+                <label for="o4">Enter OS Details Here:</label>
+                <br>
+                <input type="text" name="o4" id="o4">
+                <br>
+                <label for="">Comes with Office?</label>
+                <input type="radio" value="yes" name="officeQ4" id="officeQ4Y">
+                <label for="officeQ4Y">Yes</label>
+                <input type="radio" value="no" name="officeQ4" id="officeQ4N">
+                <label for="officeQ4N">No</label>
+                <br>
+                <br>
+                <select name="office4" id="office4" style="display: none;">
+                    <option value="2020">2020 Version</option>
+                    <option value="2019">2019 Version</option>
+                    <option value="2018">2018 Version</option>
+                    <option value="2017">2017 Version</option>
+                </select>
+                <br>
+                <br>
+                <label for="w4">Enter Warranty</label>
+                <br>
+                <!-- <input type="text" name="w1" id="w1"> -->
+                <select name="w4" id="w4">
+                    <option value="3">3 Months</option>
+                    <option value="6">6 Months</option>
+                    <option value="12">12 Months</option>
+                    <option value="24">24 Months</option>
+                </select>
+                <br>
+                <br>
+                <input type="checkbox" name="nr4y" id="nr4y">
+                <label for="nr4y">New</label>
+                <input type="checkbox" name="nr4n" id="nr4n">
+                <label for="nr4n">Refurbished</label>
+                <br>
+                <br>
+                <label for="p4">Enter Price Here:</label>
+                <br>
+                <input type="text" name="p4" id="p4">
+                <br>
+                <br>
+                <!-- ----------------------- -->
+                <!-- DEVICE NO 4 ENDS HERE   -->
+                <!-- ----------------------- -->
+            </div>
+        </div>
+        <br>
+        <input type="submit" value="Submit" class="subBtn">
+    </form>
+
+    <script>
+        let office1Y = document.querySelector("#officeQ1Y");
+        let office1N = document.querySelector("#officeQ1N");
+        office1Y.addEventListener("change", () => {
+            if (office1Y.checked === true) {
+                office1Y.nextElementSibling.nextElementSibling.nextElementSibling.nextElementSibling.nextElementSibling.nextElementSibling.style.display = "block"
+            }
+        })
+        office1N.addEventListener("change", () => {
+            if (office1N.checked === true) {
+                office1N.nextElementSibling.nextElementSibling.nextElementSibling.nextElementSibling.style.display = "none"
+            }
+        })
+        let office2Y = document.querySelector("#officeQ2Y");
+        let office2N = document.querySelector("#officeQ2N");
+        office2Y.addEventListener("change", () => {
+            if (office2Y.checked === true) {
+                office2Y.nextElementSibling.nextElementSibling.nextElementSibling.nextElementSibling.nextElementSibling.nextElementSibling.style.display = "block"
+            }
+        })
+        office2N.addEventListener("change", () => {
+            if (office2N.checked === true) {
+                office2N.nextElementSibling.nextElementSibling.nextElementSibling.nextElementSibling.style.display = "none"
+            }
+        })
+        let office3Y = document.querySelector("#officeQ3Y");
+        let office3N = document.querySelector("#officeQ3N");
+        office3Y.addEventListener("change", () => {
+            if (office3Y.checked === true) {
+                office3Y.nextElementSibling.nextElementSibling.nextElementSibling.nextElementSibling.nextElementSibling.nextElementSibling.style.display = "block"
+            }
+        })
+        office3N.addEventListener("change", () => {
+            if (office3N.checked === true) {
+                office3N.nextElementSibling.nextElementSibling.nextElementSibling.nextElementSibling.style.display = "none"
+            }
+        })
+        let office4Y = document.querySelector("#officeQ4Y");
+        let office4N = document.querySelector("#officeQ4N");
+        office4Y.addEventListener("change", () => {
+            if (office4Y.checked === true) {
+                office4Y.nextElementSibling.nextElementSibling.nextElementSibling.nextElementSibling.nextElementSibling.nextElementSibling.style.display = "block"
+            }
+        })
+        office4N.addEventListener("change", () => {
+            if (office4N.checked === true) {
+                office4N.nextElementSibling.nextElementSibling.nextElementSibling.nextElementSibling.style.display = "none"
+            }
+        })
+    </script>
+</body>
+
+</html>
