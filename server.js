@@ -29,7 +29,7 @@ app.post("/submit", (req, res) => {
     // for device no. 1 starts here
     // for device no. 1 starts here
     doc.setTextColor(204, 0, 0);
-    doc.setFont(undefined, "bold").setFontSize(24).text(req.body.t1, 25, 20)
+    doc.setFont(undefined, "bold").setFontSize(20).text(req.body.t1, 10, 20)
     doc.setTextColor(0, 0, 0);
     if (req.body.c1) {
         doc.addImage(base64_encode(path.join(__dirname, "./public/cpulogo.png")), "PNG", 10, 30, 10, 10)
@@ -90,7 +90,7 @@ app.post("/submit", (req, res) => {
     // for device no. 2 starts here
     // for device no. 2 starts here
     doc.setTextColor(204, 0, 0);
-    doc.setFont(undefined, "bold").setFontSize(24).text(req.body.t2, 115, 20)
+    doc.setFont(undefined, "bold").setFontSize(20).text(req.body.t2, 110, 20)
     doc.setTextColor(0, 0, 0);
     if (req.body.c2) {
         doc.addImage(base64_encode(path.join(__dirname, "./public/cpulogo.png")), "PNG", 115, 30, 10, 10)
@@ -151,7 +151,7 @@ app.post("/submit", (req, res) => {
     // for device no. 3 starts here
     // for device no. 3 starts here
     doc.setTextColor(204, 0, 0);
-    doc.setFont(undefined, "bold").setFontSize(24).text(req.body.t3, 25, 165)
+    doc.setFont(undefined, "bold").setFontSize(20).text(req.body.t3, 10, 165)
     doc.setTextColor(0, 0, 0);
     if (req.body.c3) {
         doc.addImage(base64_encode(path.join(__dirname, "./public/cpulogo.png")), "PNG", 10, 175, 10, 10)
@@ -212,7 +212,7 @@ app.post("/submit", (req, res) => {
     // for device no. 4 starts here
     // for device no. 4 starts here
     doc.setTextColor(204, 0, 0);
-    doc.setFont(undefined, "bold").setFontSize(24).text(req.body.t4, 130, 165)
+    doc.setFont(undefined, "bold").setFontSize(20).text(req.body.t4, 110, 165)
     doc.setTextColor(0, 0, 0);
     if (req.body.c4) {
         doc.addImage(base64_encode(path.join(__dirname, "./public/cpulogo.png")), "PNG", 115, 175, 10, 10)
